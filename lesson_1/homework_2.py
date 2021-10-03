@@ -9,7 +9,9 @@ load_dotenv(dotenv_path='../.env')  # загружаю переменные ок
 API_KEY = os.environ['YT_API_KEY']
 USERNAME = 'WolframResearch'
 
-channel_info = requests.get(f'https://www.googleapis.com/youtube/v3/channels?key={API_KEY}&forUsername={USERNAME}')
+channel_response = requests.get(f'https://www.googleapis.com/youtube/v3/channels?key={API_KEY}&forUsername={USERNAME}')
+channel_id = channel_response.json()['items'][0]['id']  # из респонса извлекаю ID канала
+playlists_response = requests.get(f'https://www.googleapis.com/youtube/v3/playlists?key={API_KEY}&channelId={channel_id}')
 
 with open('task_2.json', 'w') as f:
-    json.dump(channel_info.json(), f)
+    json.dump(playlists_response.json(), f)
