@@ -1,0 +1,7 @@
+SPIDER_MODULES = ['spiders']
+NEWSPIDER_MODULE = 'spiders'
+USER_AGENT = 'Mozilla/5.0'
+ROBOTSTXT_OBEY = False
+LOG_ENABLED = False
+LOG_LEVEL = 'DEBUG'  #INFO ERROR
+# LOG_FILE = 'log.txt'
