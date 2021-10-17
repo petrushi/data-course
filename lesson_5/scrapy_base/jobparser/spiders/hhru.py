@@ -2,16 +2,16 @@
 import scrapy
 from scrapy.http import HtmlResponse
 
-from items import JobparserItem
+from jobparser.items import JobparserItem
 
 
 class HhruSpider(scrapy.Spider):
     name = 'hhru'
     allowed_domains = ['hh.ru']
-    start_urls = ['https://spb.hh.ru/search/vacancy?area=&st=searchVacancy&text=python']
+    start_urls = ['https://izhevsk.hh.ru/search/vacancy?area=&st=searchVacancy&text=python']
 
     def parse(self, response: HtmlResponse):
-        next_page = 'https://spb.hh.ru' \
+        next_page = 'https://izhevsk.hh.ru' \
                     + response.css('a[class="bloko-button"][data-qa="pager-next"]').attrib['href']
         print(next_page)
         response.follow(next_page, callback=self.parse)

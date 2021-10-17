@@ -1,8 +1,8 @@
-from spiders.hhru import HhruSpider
+from jobparser.spiders.hhru import HhruSpider
 from scrapy.crawler import CrawlerProcess
 from scrapy.settings import Settings
 
-import settings
+from jobparser import settings
 
 # from jobparser.spiders.hhru import SjruSpider
 
