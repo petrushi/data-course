@@ -5,3 +5,7 @@ ROBOTSTXT_OBEY = False
 LOG_ENABLED = False
 LOG_LEVEL = 'DEBUG'  #INFO ERROR
 # LOG_FILE = 'log.txt'
+
+ITEM_PIPELINES = {
+   'jobparser.pipeline.JobparserPipeline': 300
+}
