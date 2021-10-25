@@ -1,0 +1,576 @@
+2021-10-18 15:39:08 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: scrapybot)
+2021-10-18 15:39:08 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.7.7 (default, Mar 23 2020, 23:19:08) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 2.8, Platform Windows-10-10.0.19041-SP0
+2021-10-18 15:39:08 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-10-18 15:39:08 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'jobparser.spiders',
+ 'SPIDER_MODULES': ['jobparser.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0'}
+2021-10-18 15:39:08 [scrapy.extensions.telnet] INFO: Telnet Password: 47aad46ebede2120
+2021-10-18 15:39:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-10-18 15:39:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-10-18 15:39:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-10-18 15:39:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['jobparser.pipeline.AvitoPhotosPipeline',
+ 'jobparser.pipeline.DataBasePipeline']
+2021-10-18 15:39:09 [scrapy.core.engine] INFO: Spider opened
+2021-10-18 15:39:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-10-18 15:39:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-10-18 15:39:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus> (referer: None)
+2021-10-18 15:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/rostov-na-donu/noutbuki/asus_2209896299?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-18 15:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://53.img.avito.st/640x480/11874548353.jpg> (referer: None)
+2021-10-18 15:39:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://53.img.avito.st/640x480/11874548353.jpg> referred in <None>
+2021-10-18 15:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://39.img.avito.st/640x480/11874548239.jpg> (referer: None)
+2021-10-18 15:39:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://39.img.avito.st/640x480/11874548239.jpg> referred in <None>
+2021-10-18 15:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://44.img.avito.st/640x480/11874548344.jpg> (referer: None)
+2021-10-18 15:39:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://44.img.avito.st/640x480/11874548344.jpg> referred in <None>
+2021-10-18 15:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://78.img.avito.st/640x480/11874548378.jpg> (referer: None)
+2021-10-18 15:39:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://78.img.avito.st/640x480/11874548378.jpg> referred in <None>
+2021-10-18 15:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://97.img.avito.st/640x480/11874548397.jpg> (referer: None)
+2021-10-18 15:39:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://97.img.avito.st/640x480/11874548397.jpg> referred in <None>
+2021-10-18 15:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://92.img.avito.st/640x480/11874548492.jpg> (referer: None)
+2021-10-18 15:39:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://92.img.avito.st/640x480/11874548492.jpg> referred in <None>
+2021-10-18 15:39:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/rostov-na-donu/noutbuki/asus_core_i5-5200_4gb500gbgt-920mkorobka_2231861724?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-18 15:39:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://44.img.avito.st/640x480/11874771444.jpg> (referer: None)
+2021-10-18 15:39:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://44.img.avito.st/640x480/11874771444.jpg> referred in <None>
+2021-10-18 15:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://08.img.avito.st/640x480/11874769908.jpg> (referer: None)
+2021-10-18 15:39:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://08.img.avito.st/640x480/11874769908.jpg> referred in <None>
+2021-10-18 15:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://65.img.avito.st/640x480/11874772165.jpg> (referer: None)
+2021-10-18 15:39:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://65.img.avito.st/640x480/11874772165.jpg> referred in <None>
+2021-10-18 15:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://11.img.avito.st/640x480/11874770411.jpg> (referer: None)
+2021-10-18 15:39:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://11.img.avito.st/640x480/11874770411.jpg> referred in <None>
+2021-10-18 15:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://89.img.avito.st/640x480/11874771889.jpg> (referer: None)
+2021-10-18 15:39:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://89.img.avito.st/640x480/11874771889.jpg> referred in <None>
+2021-10-24 10:20:26 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: scrapybot)
+2021-10-24 10:20:26 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.9.7 (default, Oct 10 2021, 15:13:22) - [GCC 11.1.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 35.0.0, Platform Linux-5.14.14-arch1-1-x86_64-with-glibc2.33
+2021-10-24 10:20:26 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-10-24 10:20:26 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'jobparser.spiders',
+ 'SPIDER_MODULES': ['jobparser.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0'}
+2021-10-24 10:20:27 [scrapy.extensions.telnet] INFO: Telnet Password: 637d7717eaabad30
+2021-10-24 10:20:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-10-24 10:20:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-10-24 10:20:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-10-24 10:20:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['jobparser.pipeline.AvitoPhotosPipeline',
+ 'jobparser.pipeline.DataBasePipeline']
+2021-10-24 10:20:28 [scrapy.core.engine] INFO: Spider opened
+2021-10-24 10:20:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-10-24 10:20:28 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-10-24 10:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus> (referer: None)
+2021-10-24 10:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/tula/noutbuki/noutbuk_asus_2264686960?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://53.img.avito.st/640x480/12110476053.jpg> (referer: None)
+2021-10-24 10:20:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://53.img.avito.st/640x480/12110476053.jpg> referred in <None>
+2021-10-24 10:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://21.img.avito.st/video/640x480/12110460221.jpg> (referer: None)
+2021-10-24 10:20:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://21.img.avito.st/video/640x480/12110460221.jpg> referred in <None>
+2021-10-24 10:20:59 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('6175093dccd704945bf19240'),
+ 'name': ['Ноутбук asus'],
+ 'photos': [{'checksum': 'c7c904b34ac1590337873c4362f7450e',
+             'path': 'full/8615c50d616a2fde10b3fe0cd7ea607a8f8ccafb.jpg',
+             'status': 'downloaded',
+             'url': 'https://53.img.avito.st/640x480/12110476053.jpg'},
+            {'checksum': 'b3e22db6e69d23c5ac8c60726dea6b47',
+             'path': 'full/78fe6b7a2cb7d380cacf9c982d8f474007160df5.jpg',
+             'status': 'downloaded',
+             'url': 'https://21.img.avito.st/video/640x480/12110460221.jpg'}],
+ 'price': ['3\xa0500', '3\xa0500']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:21:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/bryansk/tovary_dlya_kompyutera/asus_arez_rx_vega_56_2245316199?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:21:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://68.img.avito.st/640x480/12118771968.jpg> (referer: None)
+2021-10-24 10:21:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://68.img.avito.st/640x480/12118771968.jpg> referred in <None>
+2021-10-24 10:21:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://63.img.avito.st/640x480/12118771963.jpg> (referer: None)
+2021-10-24 10:21:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://63.img.avito.st/640x480/12118771963.jpg> referred in <None>
+2021-10-24 10:21:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://82.img.avito.st/640x480/12118927182.jpg> (referer: None)
+2021-10-24 10:21:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://82.img.avito.st/640x480/12118927182.jpg> referred in <None>
+2021-10-24 10:21:04 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2021-10-24 10:21:31 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('6175095cccd704945bf19241'),
+ 'name': ['Asus arez RX Vega 56'],
+ 'photos': [{'checksum': '77502ce3e03bc3af269bb221b22ee9d8',
+             'path': 'full/f083db63df97adb9f50f119c1d6826a6d897881b.jpg',
+             'status': 'downloaded',
+             'url': 'https://68.img.avito.st/640x480/12118771968.jpg'},
+            {'checksum': 'ec06f2a596a15ee6478ca7c90b7dd78c',
+             'path': 'full/aa9310069cbe7fa9de8b477073817a506efe7dd2.jpg',
+             'status': 'downloaded',
+             'url': 'https://63.img.avito.st/640x480/12118771963.jpg'},
+            {'checksum': '099104535bec561d147d0fe80c04df05',
+             'path': 'full/2ac692619c041922292fe0128379b9f955381b5c.jpg',
+             'status': 'downloaded',
+             'url': 'https://82.img.avito.st/640x480/12118927182.jpg'}],
+ 'price': ['60\xa0000', '60\xa0000']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:21:31 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-10-24 10:21:31 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2021-10-24 10:21:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/verhniy_baskunchak/noutbuki/asus_x540s_2255179080?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:21:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://29.img.avito.st/640x480/12117453629.jpg> (referer: None)
+2021-10-24 10:21:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://29.img.avito.st/640x480/12117453629.jpg> referred in <None>
+2021-10-24 10:21:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://26.img.avito.st/640x480/12117453626.jpg> (referer: None)
+2021-10-24 10:21:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://26.img.avito.st/640x480/12117453626.jpg> referred in <None>
+2021-10-24 10:22:02 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('6175097bccd704945bf19242'),
+ 'name': ['Asus x540s'],
+ 'photos': [{'checksum': '6e0977b7838bb60f990565849017c4f4',
+             'path': 'full/4908ed82a5dca30bc0d3134c76eb1b40f85a8f69.jpg',
+             'status': 'downloaded',
+             'url': 'https://29.img.avito.st/640x480/12117453629.jpg'},
+            {'checksum': '3724df9f2665507f577a463b6f4a8e25',
+             'path': 'full/0b5f96cbe72422aabd6f37dfe057cbf0ba33948a.jpg',
+             'status': 'downloaded',
+             'url': 'https://26.img.avito.st/640x480/12117453626.jpg'}],
+ 'price': ['5\xa0000', '5\xa0000']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/tolyatti/planshety_i_elektronnye_knigi/asus_tf300fg_android_6_1377534503?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://34.img.avito.st/640x480/5676513134.jpg> (referer: None)
+2021-10-24 10:22:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://34.img.avito.st/640x480/5676513134.jpg> referred in <None>
+2021-10-24 10:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://51.img.avito.st/640x480/5676513151.jpg> (referer: None)
+2021-10-24 10:22:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://51.img.avito.st/640x480/5676513151.jpg> referred in <None>
+2021-10-24 10:22:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://03.img.avito.st/640x480/5676513203.jpg> (referer: None)
+2021-10-24 10:22:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://03.img.avito.st/640x480/5676513203.jpg> referred in <None>
+2021-10-24 10:22:33 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('6175099bccd704945bf19243'),
+ 'name': ['Asus tf300fg android 6'],
+ 'photos': [{'checksum': 'ad4dd5599432728a0a1ef0b9457785f4',
+             'path': 'full/bd16635dba686c4404156c2b8292dc2bcbe94d51.jpg',
+             'status': 'downloaded',
+             'url': 'https://34.img.avito.st/640x480/5676513134.jpg'},
+            {'checksum': '288782958509b55ebbc31871ba2607d5',
+             'path': 'full/bfdd9aa6786770340fce6cb5b1abab462b589ba3.jpg',
+             'status': 'downloaded',
+             'url': 'https://51.img.avito.st/640x480/5676513151.jpg'},
+            {'checksum': '570f1963c2a176fc20c91faa214b0d60',
+             'path': 'full/1559164eaba05f2e61e048dbc7f0d1c48443ac35.jpg',
+             'status': 'downloaded',
+             'url': 'https://03.img.avito.st/640x480/5676513203.jpg'}],
+ 'price': ['3\xa0900', '3\xa0900']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:22:33 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2021-10-24 10:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/rostov-na-donu/noutbuki/noutbuk_asus_2271306558> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://63.img.avito.st/640x480/12119551163.jpg> (referer: None)
+2021-10-24 10:22:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://63.img.avito.st/640x480/12119551163.jpg> referred in <None>
+2021-10-24 10:23:04 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('617509b9ccd704945bf19244'),
+ 'name': ['Ноутбук asus'],
+ 'photos': [{'checksum': 'ace2ffb1137449eebc20aadb3d532e17',
+             'path': 'full/27e45596d23b52b39384bad56750b6d196e37d43.jpg',
+             'status': 'downloaded',
+             'url': 'https://63.img.avito.st/640x480/12119551163.jpg'}],
+ 'price': ['3\xa0500', '3\xa0500']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/sverdlovskaya_oblast_zarechnyy/noutbuki/noutbuk_asus_2248482089?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://95.img.avito.st/640x480/12115140395.jpg> (referer: None)
+2021-10-24 10:23:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://95.img.avito.st/640x480/12115140395.jpg> referred in <None>
+2021-10-24 10:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://73.img.avito.st/640x480/12115143873.jpg> (referer: None)
+2021-10-24 10:23:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://73.img.avito.st/640x480/12115143873.jpg> referred in <None>
+2021-10-24 10:23:35 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('617509d9ccd704945bf19245'),
+ 'name': ['Ноутбук asus'],
+ 'photos': [{'checksum': 'c4a028a1dd3701bd7b3468dff83d7102',
+             'path': 'full/b19e6d73a17481c674c491a223df1344ce1d7669.jpg',
+             'status': 'downloaded',
+             'url': 'https://95.img.avito.st/640x480/12115140395.jpg'},
+            {'checksum': '13f4cf13bff83a7a3cb03226e8e7dd2a',
+             'path': 'full/ababf13052cfde3217643e8d831700dadc418d96.jpg',
+             'status': 'downloaded',
+             'url': 'https://73.img.avito.st/640x480/12115143873.jpg'}],
+ 'price': ['500', '500']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:23:35 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2021-10-24 10:23:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/sochi/noutbuki/asus_rog_2143958208?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:23:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://12.img.avito.st/640x480/11205586912.jpg> (referer: None)
+2021-10-24 10:23:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://12.img.avito.st/640x480/11205586912.jpg> referred in <None>
+2021-10-24 10:23:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://73.img.avito.st/640x480/11205586973.jpg> (referer: None)
+2021-10-24 10:23:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://73.img.avito.st/640x480/11205586973.jpg> referred in <None>
+2021-10-24 10:23:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://24.img.avito.st/640x480/11205586924.jpg> (referer: None)
+2021-10-24 10:23:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://24.img.avito.st/640x480/11205586924.jpg> referred in <None>
+2021-10-24 10:23:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://69.img.avito.st/640x480/11205586969.jpg> (referer: None)
+2021-10-24 10:23:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://69.img.avito.st/640x480/11205586969.jpg> referred in <None>
+2021-10-24 10:24:06 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('617509f8ccd704945bf19246'),
+ 'name': ['Asus rog'],
+ 'photos': [{'checksum': '010eb309197ce600f68270ac06f1b424',
+             'path': 'full/4c10ef743c15c8ee90d81bcb9e7ef0b95a5d0f0a.jpg',
+             'status': 'downloaded',
+             'url': 'https://12.img.avito.st/640x480/11205586912.jpg'},
+            {'checksum': '60ed2bba68b9dd4e8f8f2f366227dcaa',
+             'path': 'full/61c253a8b5865c45b9384c92f29ced927b28c970.jpg',
+             'status': 'downloaded',
+             'url': 'https://24.img.avito.st/640x480/11205586924.jpg'},
+            {'checksum': 'b3c25633109ef1ae21076cc629ba6b93',
+             'path': 'full/d6278d1a0adb2a89ced1b0bb25abbed87db19e99.jpg',
+             'status': 'downloaded',
+             'url': 'https://73.img.avito.st/640x480/11205586973.jpg'},
+            {'checksum': 'df440192d378116e35594afaf2a545d9',
+             'path': 'full/b5f8b6ff5d0a423c772a84125ac8bb7671a78913.jpg',
+             'status': 'downloaded',
+             'url': 'https://69.img.avito.st/640x480/11205586969.jpg'}],
+ 'price': ['32\xa0000', '32\xa0000']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/moskva_zelenograd/noutbuki/asus_2238344204?slocation=621540> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://80.img.avito.st/640x480/12115507080.jpg> (referer: None)
+2021-10-24 10:24:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://80.img.avito.st/640x480/12115507080.jpg> referred in <None>
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://29.img.avito.st/640x480/12115507329.jpg> (referer: None)
+2021-10-24 10:24:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://29.img.avito.st/640x480/12115507329.jpg> referred in <None>
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://91.img.avito.st/640x480/12115507191.jpg> (referer: None)
+2021-10-24 10:24:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://91.img.avito.st/640x480/12115507191.jpg> referred in <None>
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://76.img.avito.st/640x480/12115507276.jpg> (referer: None)
+2021-10-24 10:24:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://76.img.avito.st/640x480/12115507276.jpg> referred in <None>
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://13.img.avito.st/640x480/12115507113.jpg> (referer: None)
+2021-10-24 10:24:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://13.img.avito.st/640x480/12115507113.jpg> referred in <None>
+2021-10-24 10:24:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://14.img.avito.st/640x480/12115507414.jpg> (referer: None)
+2021-10-24 10:24:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://14.img.avito.st/640x480/12115507414.jpg> referred in <None>
+2021-10-24 10:24:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://44.img.avito.st/640x480/12115507344.jpg> (referer: None)
+2021-10-24 10:24:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://44.img.avito.st/640x480/12115507344.jpg> referred in <None>
+2021-10-24 10:24:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://38.img.avito.st/640x480/12115507438.jpg> (referer: None)
+2021-10-24 10:24:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://38.img.avito.st/640x480/12115507438.jpg> referred in <None>
+2021-10-24 10:24:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://04.img.avito.st/640x480/12115507204.jpg> (referer: None)
+2021-10-24 10:24:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://04.img.avito.st/640x480/12115507204.jpg> referred in <None>
+2021-10-24 10:24:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://18.img.avito.st/640x480/12115507118.jpg> (referer: None)
+2021-10-24 10:24:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://18.img.avito.st/640x480/12115507118.jpg> referred in <None>
+2021-10-24 10:24:37 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('61750a17ccd704945bf19247'),
+ 'name': ['Asus'],
+ 'photos': [{'checksum': '5e7b7d1f4095a8c97865a9d60954368b',
+             'path': 'full/da3a795ebf2cf2619d3730ee8c15462ddfa51f1a.jpg',
+             'status': 'downloaded',
+             'url': 'https://80.img.avito.st/640x480/12115507080.jpg'},
+            {'checksum': 'db8a9819a8a2b3497e1dd4e5a289fb7c',
+             'path': 'full/5ecbe3b60a8dcfcf963117beab4b526c185577ec.jpg',
+             'status': 'downloaded',
+             'url': 'https://18.img.avito.st/640x480/12115507118.jpg'},
+            {'checksum': '1e726f383553f968a8166feb691bd764',
+             'path': 'full/b4df92f8789ee81a1b703b010158935bf131adc1.jpg',
+             'status': 'downloaded',
+             'url': 'https://13.img.avito.st/640x480/12115507113.jpg'},
+            {'checksum': '45d1d486ee6232ad9b545eacb5b85c10',
+             'path': 'full/505156fa8dcd39572d3846bc8fbc6870e7b3a16c.jpg',
+             'status': 'downloaded',
+             'url': 'https://91.img.avito.st/640x480/12115507191.jpg'},
+            {'checksum': '20bcd06538c3e863c599815ed7a6bf89',
+             'path': 'full/a558791b924c332e3b468914cd7a40c4abd56df9.jpg',
+             'status': 'downloaded',
+             'url': 'https://04.img.avito.st/640x480/12115507204.jpg'},
+            {'checksum': '9efc55805e3a32ec957b0c2377d9b158',
+             'path': 'full/95b8f681ca2bc7d78ebc5283b31f4f9f6c418076.jpg',
+             'status': 'downloaded',
+             'url': 'https://76.img.avito.st/640x480/12115507276.jpg'},
+            {'checksum': '46dd2f7c78170a67da84caf951974fce',
+             'path': 'full/c35e3e0db0bde74ac0256fc8f47c280ba05b03c9.jpg',
+             'status': 'downloaded',
+             'url': 'https://29.img.avito.st/640x480/12115507329.jpg'},
+            {'checksum': '3940d6ca9e89cc889dbc168db2619b1a',
+             'path': 'full/751da63ab07d9854c35272a3cd3f2297b907444a.jpg',
+             'status': 'downloaded',
+             'url': 'https://44.img.avito.st/640x480/12115507344.jpg'},
+            {'checksum': '3ae20f40ffc93e50b30accc578f89a6e',
+             'path': 'full/4daed75b971fca43bb1a84844598631a5a2f9712.jpg',
+             'status': 'downloaded',
+             'url': 'https://14.img.avito.st/640x480/12115507414.jpg'},
+            {'checksum': '3a2b7dbcc3767af3af0d5f60956539ad',
+             'path': 'full/758f141dc8f1a05d179cbea48b70d1ec48572ebe.jpg',
+             'status': 'downloaded',
+             'url': 'https://38.img.avito.st/640x480/12115507438.jpg'}],
+ 'price': ['8\xa0500', '8\xa0500']}
+Traceback (most recent call last):
+  File "/home/stass/.local/lib/python3.9/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/stass/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/stass/data/lesson_6/scrapy_base/jobparser/pipeline.py", line 13, in process_item
+    collection.insert_one(item)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 705, in insert_one
+    self._insert(document,
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 620, in _insert
+    return self._insert_one(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/collection.py", line 609, in _insert_one
+    self.__database.client._retryable_write(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1551, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1948, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1935, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1883, in __start_session
+    server_session = self._get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1921, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 520, in get_server_session
+    session_timeout = self._check_session_support()
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 499, in _check_session_support
+    self._select_servers_loop(
+  File "/home/stass/.local/lib/python3.9/site-packages/pymongo/topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 6175093cccd704945bf1923f, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+2021-10-24 10:24:37 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 16 pages/min), scraped 0 items (at 0 items/min)
+2021-10-24 10:24:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.avito.ru/madzhalis/noutbuki/asus_2227020515> (referer: https://www.avito.ru/rossiya/bytovaya_elektronika?q=asus)
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://36.img.avito.st/640x480/11914582736.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://36.img.avito.st/640x480/11914582736.jpg> referred in <None>
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://65.img.avito.st/640x480/11914588265.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://65.img.avito.st/640x480/11914588265.jpg> referred in <None>
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://37.img.avito.st/640x480/11914582737.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://37.img.avito.st/640x480/11914582737.jpg> referred in <None>
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://63.img.avito.st/640x480/11914588263.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://63.img.avito.st/640x480/11914588263.jpg> referred in <None>
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://38.img.avito.st/640x480/11914582738.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://38.img.avito.st/640x480/11914582738.jpg> referred in <None>
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://67.img.avito.st/640x480/11914588267.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://67.img.avito.st/640x480/11914588267.jpg> referred in <None>
+2021-10-24 10:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://88.img.avito.st/640x480/11914588288.jpg> (referer: None)
+2021-10-24 10:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://88.img.avito.st/640x480/11914588288.jpg> referred in <None>
