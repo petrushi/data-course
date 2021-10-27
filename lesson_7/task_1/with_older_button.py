@@ -64,12 +64,12 @@ def parse_message():
 
 
 if __name__ == "__main__":
-    s = 'https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue='\
+    url = 'https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue='\
         'https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache='\
         '2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
     driver = webdriver.Chrome('/usr/local/bin/chromedriver', service_args=["--verbose", "--log-path=chrome.log"])
-    driver.get(s)
-    email = input('input ёр email: ')
+    driver.get(url)
+    email = input('input your email: ')
     password = input('input your password: ')
     login_to_gmail(email, password)
     client = MongoClient('localhost', 27017)
