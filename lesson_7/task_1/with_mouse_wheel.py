@@ -59,9 +59,7 @@ def parse_message():
 
 
 if __name__ == "__main__":
-    url = 'https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue='\
-        'https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache='\
-        '2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
+    url = 'https://accounts.google.com/signin/v2/identifier?service=mail'
     driver = webdriver.Chrome('/usr/local/bin/chromedriver', service_args=["--verbose", "--log-path=chrome.log"])
     driver.get(url)
     email = input('input your email: ')
