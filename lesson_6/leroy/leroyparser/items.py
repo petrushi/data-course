@@ -15,4 +15,5 @@ class LeroyparserItem(scrapy.Item):
     name = scrapy.Field()
     photos = scrapy.Field()
     price = scrapy.Field()
+    link = scrapy.Field()
     pass

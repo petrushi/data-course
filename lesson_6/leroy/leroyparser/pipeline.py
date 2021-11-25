@@ -6,7 +6,7 @@ from pymongo import MongoClient
 class DataBasePipeline(object):
     def __init__(self):
         client = MongoClient('localhost', 27017)
-        self.mongo_base = client.leroy_photo
+        self.mongo_base = client.leroy
 
     def process_item(self, item, spider):
         collection = self.mongo_base[spider.name]
